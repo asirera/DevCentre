@@ -53,17 +53,17 @@ section {
   display: block;
 }
 
-audio,
+/*audio,
 canvas,
 video {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-}
+}*/
 
-audio:not([controls]) {
+/*audio:not([controls]) {
   display: none;
-}
+}*/
 
 html {
   font-size: 100%;
@@ -123,7 +123,7 @@ textarea {
 
 button,
 input {
-  *overflow: visible;
+ /* *overflow: visible;*/
   line-height: normal;
 }
 
@@ -263,10 +263,10 @@ a:focus {
           border-radius: 500px;
 }
 
-.row {
+/*.row {
   margin-left: -20px;
   *zoom: 1;
-}
+}*/
 
 .row:before,
 .row:after {
@@ -290,10 +290,13 @@ a:focus {
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
   width: 940px;
+ 
 }
 
 .span12 {
   width: 940px;
+   border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: red;
 }
 
 .span11 {
@@ -388,10 +391,10 @@ a:focus {
   margin-left: 100px;
 }
 
-.row-fluid {
+/*.row-fluid {
   width: 100%;
   *zoom: 1;
-}
+}*/
 
 .row-fluid:before,
 .row-fluid:after {
@@ -617,7 +620,7 @@ a:focus {
 .container {
   margin-right: auto;
   margin-left: auto;
-  *zoom: 1;
+
 }
 
 .container:before,
@@ -807,6 +810,7 @@ h4 small {
   padding-bottom: 9px;
   margin: 20px 0 30px;
   border-bottom: 1px solid #eeeeee;
+   
 }
 
 ul,
@@ -1170,7 +1174,7 @@ input[type="radio"],
 input[type="checkbox"] {
   margin: 4px 0 0;
   margin-top: 1px \9;
-  *margin-top: 0;
+  /**margin-top: 0;*/
   line-height: normal;
 }
 
@@ -1189,7 +1193,7 @@ input[type="file"] {
   height: 30px;
   /* In IE7, the height of the select element cannot be changed by height, only font-size */
 
-  *margin-top: 4px;
+ /* *margin-top: 4px;*/
   /* For IE7, add top margin to align select with labels */
 
   line-height: 30px;
@@ -1246,10 +1250,10 @@ textarea:-ms-input-placeholder {
   color: #999999;
 }
 
-input::-webkit-input-placeholder,
+/*input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #999999;
-}
+}*/
 
 .radio,
 .checkbox {
@@ -1305,7 +1309,7 @@ textarea::-webkit-input-placeholder {
   width: 530px;
 }
 
-input[class*="span"],
+/*input[class*="span"],
 select[class*="span"],
 textarea[class*="span"],
 .uneditable-input[class*="span"],
@@ -1315,9 +1319,9 @@ textarea[class*="span"],
 .row-fluid .uneditable-input[class*="span"] {
   float: none;
   margin-left: 0;
-}
+}*/
 
-.input-append input[class*="span"],
+/*.input-append input[class*="span"],
 .input-append .uneditable-input[class*="span"],
 .input-prepend input[class*="span"],
 .input-prepend .uneditable-input[class*="span"],
@@ -1329,7 +1333,7 @@ textarea[class*="span"],
 .row-fluid .input-append [class*="span"] {
   display: inline-block;
 }
-
+*/
 input,
 textarea,
 .uneditable-input {
@@ -1412,9 +1416,9 @@ textarea.span1,
   width: 46px;
 }
 
-.controls-row {
+/*.controls-row {
   *zoom: 1;
-}
+}*/
 
 .controls-row:before,
 .controls-row:after {
@@ -1427,7 +1431,7 @@ textarea.span1,
   clear: both;
 }
 
-.controls-row [class*="span"],
+/*.controls-row [class*="span"],
 .row-fluid .controls-row [class*="span"] {
   float: left;
 }
@@ -1435,7 +1439,7 @@ textarea.span1,
 .controls-row .checkbox[class*="span"],
 .controls-row .radio[class*="span"] {
   padding-top: 5px;
-}
+}*/
 
 input[disabled],
 select[disabled],
@@ -1632,7 +1636,7 @@ select:focus:invalid:focus {
   margin-bottom: 20px;
   background-color: #f5f5f5;
   border-top: 1px solid #e5e5e5;
-  *zoom: 1;
+ /* *zoom: 1;*/
 }
 
 .form-actions:before,
@@ -1658,10 +1662,10 @@ select:focus:invalid:focus {
 
 .help-inline {
   display: inline-block;
-  *display: inline;
+  /**display: inline;*/
   padding-left: 5px;
   vertical-align: middle;
-  *zoom: 1;
+ /* *zoom: 1;*/
 }
 
 .input-append,
@@ -1694,7 +1698,7 @@ select:focus:invalid:focus {
 .input-prepend .uneditable-input {
   position: relative;
   margin-bottom: 0;
-  *margin-left: 0;
+ /* *margin-left: 0;*/
   vertical-align: top;
   -webkit-border-radius: 0 4px 4px 0;
      -moz-border-radius: 0 4px 4px 0;
@@ -1890,7 +1894,7 @@ input.search-query {
 .form-inline .input-append,
 .form-horizontal .input-append {
   display: inline-block;
-  *display: inline;
+ /* *display: inline;*/
   margin-bottom: 0;
   vertical-align: middle;
   *zoom: 1;
@@ -1945,7 +1949,7 @@ legend + .control-group {
 
 .form-horizontal .control-group {
   margin-bottom: 20px;
-  *zoom: 1;
+ /* *zoom: 1;*/
 }
 
 .form-horizontal .control-group:before,
@@ -1967,15 +1971,14 @@ legend + .control-group {
 }
 
 .form-horizontal .controls {
-  *display: inline-block;
-  *padding-left: 20px;
+ 
   margin-left: 180px;
   *margin-left: 0;
 }
 
-.form-horizontal .controls:first-child {
+/*.form-horizontal .controls:first-child {
   *padding-left: 180px;
-}
+}*/
 
 .form-horizontal .help-block {
   margin-bottom: 0;
@@ -2048,7 +2051,7 @@ table {
 .table-bordered {
   border: 1px solid #dddddd;
   border-collapse: separate;
-  *border-collapse: collapse;
+  
   border-left: 0;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
@@ -2148,14 +2151,7 @@ table {
   background-color: #f5f5f5;
 }
 
-table td[class*="span"],
-table th[class*="span"],
-.row-fluid table td[class*="span"],
-.row-fluid table th[class*="span"] {
-  display: table-cell;
-  float: none;
-  margin-left: 0;
-}
+
 
 .table td.span1,
 .table th.span1 {
@@ -2273,41 +2269,12 @@ table th[class*="span"],
   background-color: #c4e3f3;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  margin-top: 1px;
-  *margin-right: .3em;
-  line-height: 14px;
-  vertical-align: text-top;
-  background-image: url("../img/glyphicons-halflings.png");
-  background-position: 14px 14px;
-  background-repeat: no-repeat;
-}
+
 
 /* White icons with optional class, or on hover/focus/active states of certain elements */
 
 .icon-white,
-.nav-pills > .active > a > [class^="icon-"],
-.nav-pills > .active > a > [class*=" icon-"],
-.nav-list > .active > a > [class^="icon-"],
-.nav-list > .active > a > [class*=" icon-"],
-.navbar-inverse .nav > .active > a > [class^="icon-"],
-.navbar-inverse .nav > .active > a > [class*=" icon-"],
-.dropdown-menu > li > a:hover > [class^="icon-"],
-.dropdown-menu > li > a:focus > [class^="icon-"],
-.dropdown-menu > li > a:hover > [class*=" icon-"],
-.dropdown-menu > li > a:focus > [class*=" icon-"],
-.dropdown-menu > .active > a > [class^="icon-"],
-.dropdown-menu > .active > a > [class*=" icon-"],
-.dropdown-submenu:hover > a > [class^="icon-"],
-.dropdown-submenu:focus > a > [class^="icon-"],
-.dropdown-submenu:hover > a > [class*=" icon-"],
-.dropdown-submenu:focus > a > [class*=" icon-"] {
-  background-image: url("../img/glyphicons-halflings-white.png");
-}
+
 
 .icon-glass {
   background-position: 0      0;
@@ -2877,9 +2844,7 @@ table th[class*="span"],
   position: relative;
 }
 
-.dropdown-toggle {
-  *margin-bottom: -3px;
-}
+
 
 .dropdown-toggle:active,
 .open .dropdown-toggle {
@@ -2895,6 +2860,7 @@ table th[class*="span"],
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
   content: "";
+  background-color: red;
 }
 
 .dropdown .caret {
@@ -2916,8 +2882,8 @@ table th[class*="span"],
   background-color: #ffffff;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  *border-right-width: 2px;
-  *border-bottom-width: 2px;
+ 
+ 
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -2935,7 +2901,6 @@ table th[class*="span"],
 }
 
 .dropdown-menu .divider {
-  *width: 100%;
   height: 1px;
   margin: 9px 1px;
   *margin: -5px 0 5px;
@@ -2967,10 +2932,9 @@ table th[class*="span"],
   background-image: -o-linear-gradient(top, #0088cc, #0077b3);
   background-image: linear-gradient(to bottom, #0088cc, #0077b3);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
-}
+ 
 
-.dropdown-menu > .active > a,
+
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
   color: #ffffff;
@@ -2998,12 +2962,10 @@ table th[class*="span"],
   cursor: default;
   background-color: transparent;
   background-image: none;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+ 
 }
 
-.open {
-  *z-index: 1000;
-}
+
 
 .open > .dropdown-menu {
   display: block;
@@ -3088,7 +3050,7 @@ table th[class*="span"],
 }
 
 .dropdown-submenu.pull-left > .dropdown-menu {
-  left: -100%;
+  
   margin-left: 10px;
   -webkit-border-radius: 6px 0 6px 6px;
      -moz-border-radius: 6px 0 6px 6px;
@@ -3175,7 +3137,7 @@ table th[class*="span"],
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
   opacity: 0.2;
-  filter: alpha(opacity=20);
+  
 }
 
 .close:hover,
@@ -3184,7 +3146,7 @@ table th[class*="span"],
   text-decoration: none;
   cursor: pointer;
   opacity: 0.4;
-  filter: alpha(opacity=40);
+ 
 }
 
 button.close {
@@ -3197,7 +3159,7 @@ button.close {
 
 .btn {
   display: inline-block;
-  *display: inline;
+  
   padding: 4px 12px;
   margin-bottom: 0;
   *margin-left: .3em;
@@ -3874,7 +3836,6 @@ input[type="submit"].btn.btn-mini {
 }
 
 .alert {
-  max-width:400px;
   padding: 8px 35px 8px 14px;
   margin-bottom: 20px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
@@ -4372,7 +4333,6 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-inner {
   min-height: 40px;
- 
   padding-right: 20px;
   padding-left: 20px;
   background-color: #fafafa;

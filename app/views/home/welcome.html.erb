@@ -1,0 +1,15 @@
+<h3>Welcome <%= current_user.name %></h3>
+<% @users.each do |user| %>
+  <p>User: <%= user.name %> </p>
+  <p>User: <%=link_to user.name, user %></p>
+<% end %>
+
+
+
+
+  <li><% if user_signed_in? %>
+  <div>Signed in as... <%= current_user.email %></div>
+<% end %></li>
+  <li><% if user_signed_in? %>
+  <div>Signed in as... <%= current_user.name %></div>
+<% end %></li>

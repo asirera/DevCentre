@@ -13,6 +13,9 @@
     <li>
     <%= link_to 'Edit account', edit_user_registration_path %>
     </li>
+    <%#*<li>%>
+    <%#= link_to 'My links', links_path%>
+    <%#*</li>%>
     <% if current_user.has_role? :admin %>
       <li>
       <%= link_to 'Admin', users_path %>
@@ -23,4 +26,5 @@
     <%= link_to 'Sign up', new_user_registration_path %>
     </li>
   <% end %>
+    
 </ul>

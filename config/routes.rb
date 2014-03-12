@@ -2,7 +2,7 @@ DevCenter::Application.routes.draw do
  
 
  authenticated :user do
-    root :to => 'home#index'
+    root :to => 'home#welcome'
   end
   root :to => "home#index"
   devise_for :users
