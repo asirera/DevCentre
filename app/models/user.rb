@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  #has_many :links
+  has_many :favs, dependent: :destroy
   rolify
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,

@@ -1,5 +1,8 @@
 DevCenter::Application.routes.draw do
  
+  resources :favs
+  resources :comments
+  resources :links
 
  authenticated :user do
     root :to => 'home#welcome'

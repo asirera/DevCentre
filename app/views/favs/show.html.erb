@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @fav.name %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @fav.url %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @fav.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_fav_path(@fav) %> |
+<%= link_to 'Back', favs_path %>
